@@ -1,0 +1,41 @@
+{
+  "name": "size_charts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/http": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/router": "^3.0.0",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.33",
+    "@types/node": "^6.0.39",
+    "awesome-typescript-loader": "3.0.0-beta.10",
+    "concurrently": "2.1.0",
+    "css-loader": "^0.26.1",
+    "lite-server": "^2.3.0",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.10",
+    "systemjs": "^0.19.47",
+    "to-string-loader": "^1.1.4",
+    "ts-helpers": "^1.1.1",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}

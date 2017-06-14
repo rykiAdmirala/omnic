@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+/* GENERAL STYLES */
+
+body {
+    font: 12px/1 'Opens Sans', Arial, sans-serif;
+    background: #e4e4e4;
+}
+.app {
+    max-width: 1200px;
+    min-height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+/* NAV */
+
+.nav-title {
+    margin: 0 0 11px;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    color: #ccc;
+}
+.nav {
+    margin: 0 0 30px;
+    text-align: center;
+}
+.nav li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+}
+.nav a {
+    display: block;
+    padding: 0 25px;
+    line-height: 40px;
+    border-bottom: 3px solid #f0c4cd;
+    color: #555;
+    font-size: 18px;
+}
+.nav a:hover {
+    border-bottom-color: #ec9faf;
+}
+.nav a.active {
+    border-bottom-color: #ea395d;
+}
+
+/* TYPES NAV */
+
+.chart-types {
+    margin: 0 0 20px;
+    padding: 0 20px;
+}
+.chart-type {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 0 10px;
+    border: 1px solid #d8d7d7;
+    border-radius: 3px;
+    line-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.chart-type:hover {
+    box-shadow: inset 0px 1px 3px 0 rgba(154, 154, 154, 0.38);
+}
+.chart-type:active {
+    position: relative;
+    top: 1px;
+}
+.chart-type.selected {
+    background: #e4e4e4;
+    box-shadow: inset 0px 0px 3px 0px rgba(154, 154, 154, 0.38);
+}
+
+/* CHART TABLE */
+
+.chart {
+    width: 100%;
+    margin: 25px 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+.chart__row:first-child {
+    font-weight: bold;
+}
+.chart__row:hover {
+    background: #f7f7f7;
+}
+.chart__col {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+.chart-type--add {
+    float: right;
+    background: #ea395d;
+    border-color: #ca2446;
+    color: #fff;
+}
+.chart-type--add:hover {
+    background: #ef4266;
+}
+
+/* CHART TABLE EDIT/ADD */
+.chart-edit__name {
+    display: block;
+    margin: 15px 0;
+}
+.chart-edit__name input {
+    margin: 0 0 0 2%;
+    padding: 4px 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.chart-edit__table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.chart-edit__table input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+}
+.chart-edit__table input:focus {
+    outline: none;
+}
+.chart-edit__table td {
+    border: 1px solid #c0c0c0;
+    font-size: 14px;
+}
+.manage-chart {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 20px;
+    padding: 6px 9px;
+    background: none;
+    border: 1px solid #ea395d;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .3);
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+}
+.manage-chart--save {
+    float: right;
+    background: #ea395d;
+    color: #fff;
+}
+.manage-chart:hover {
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .5);
+}
+.manage-chart--save:hover {
+    background: #d8254a;
+}
+.manage-chart:active {
+    position: relative;
+    top: 2px;
+}
+.manage-chart--save:focus {
+    outline: none;
+}

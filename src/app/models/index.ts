@@ -1,0 +1,1 @@
+export { TypeChart } from './chart';
