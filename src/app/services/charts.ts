@@ -4,7 +4,7 @@ import { ApiService } from './index';
 @Injectable()
 export class ChartsService {
 
-  public url = '/assets/data.json';
+  public url = '/omnic/assets/data.json';
   public chartsPath: string = 'charts';
   
   constructor (
