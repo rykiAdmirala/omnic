@@ -40,7 +40,7 @@ import { TypeChart } from '../models/index';
         Add new SizeChart
       </a>
 
-      <a class="chart-type chart-type--add"
+      <a class="chart-type chart-type--edit"
         [routerLink]="[selectedTypeName.toLowerCase(), 'edit']"
       >
         Edit this SizeChart

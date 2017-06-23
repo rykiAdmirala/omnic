@@ -14,7 +14,7 @@ import { ChartsService } from '../services/index';
           *ngFor="let chart of charts"
         >
           <a
-            [routerLink]="['/omnic/' + chart.name.toLowerCase()]"
+            [routerLink]="['/' + chart.name.toLowerCase()]"
             routerLinkActive="active"
           >
             {{ chart.name }}

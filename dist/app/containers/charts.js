@@ -26,7 +26,7 @@ var Charts = (function () {
 }());
 Charts = __decorate([
     core_1.Component({
-        template: "\n    \n    <div class=\"nav-title\">Select your category</div>\n\n    <nav class=\"nav\">\n      <ul>\n        <li\n          *ngFor=\"let chart of charts\"\n        >\n          <a\n            [routerLink]=\"['/omnic/' + chart.name.toLowerCase()]\"\n            routerLinkActive=\"active\"\n          >\n            {{ chart.name }}\n          </a>\n        </li>\n        \n      </ul>\n    </nav>\n    \n    <router-outlet></router-outlet>\n\n\n  "
+        template: "\n    \n    <div class=\"nav-title\">Select your category</div>\n\n    <nav class=\"nav\">\n      <ul>\n        <li\n          *ngFor=\"let chart of charts\"\n        >\n          <a\n            [routerLink]=\"['/' + chart.name.toLowerCase()]\"\n            routerLinkActive=\"active\"\n          >\n            {{ chart.name }}\n          </a>\n        </li>\n        \n      </ul>\n    </nav>\n    \n    <router-outlet></router-outlet>\n\n\n  "
     }),
     __metadata("design:paramtypes", [router_1.Router,
         index_1.ChartsService])

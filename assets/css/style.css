@@ -117,13 +117,15 @@ body {
     padding: 5px 10px;
     border: 1px solid #ccc;
 }
-.chart-type--add {
+.chart-type--add,
+.chart-type--edit {
     float: right;
     background: #ea395d;
     border-color: #ca2446;
     color: #fff;
 }
-.chart-type--add:hover {
+.chart-type--add:hover,
+.chart-type--edit:hover {
     background: #ef4266;
 }
 
