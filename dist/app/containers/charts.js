@@ -22,11 +22,6 @@ var Charts = (function () {
         this.chartsService.getCharts()
             .subscribe(function (resp) { return _this.charts = resp; });
     };
-    Charts.prototype.getRouterLink = function (chart) {
-        var a = "./" + chart.name.toLowerCase();
-        console.log(a);
-        return a;
-    };
     return Charts;
 }());
 Charts = __decorate([

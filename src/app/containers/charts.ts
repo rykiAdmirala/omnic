@@ -45,11 +45,5 @@ export class Charts implements OnInit {
 
   }
 
-  getRouterLink(chart) {
-    let a = `./${chart.name.toLowerCase()}`;
-    console.log(a);
-    return a;
-  }
-
 
 }
