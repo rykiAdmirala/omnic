@@ -4,10 +4,14 @@ var router_1 = require("@angular/router");
 var index_1 = require("./containers/index");
 exports.routes = router_1.RouterModule.forRoot([
     {
-        path: 'charts',
+        path: '',
         component: index_1.Charts,
         children: [
             {
+                path: '',
+                redirectTo: '/women',
+                pathMatch: 'full'
+            }, {
                 path: ':gender',
                 children: [
                     { path: '', component: index_1.ChartDetails },
@@ -16,10 +20,6 @@ exports.routes = router_1.RouterModule.forRoot([
                 ]
             }
         ]
-    }, {
-        path: '',
-        redirectTo: '/charts',
-        pathMatch: 'full'
     }, {
         path: '**',
         redirectTo: '',

@@ -35,7 +35,7 @@ import { TypeChart } from '../models/index';
 
 
       <a class="chart-type chart-type--add"
-        [routerLink]="['../add']"
+        [routerLink]="['add']"
       >
         Add new SizeChart
       </a>

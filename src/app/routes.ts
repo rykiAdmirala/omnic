@@ -4,10 +4,14 @@ import { Charts, ChartDetails, ChartAddEdit } from './containers/index';
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([
   {
-    path: 'charts',
+    path: '',
     component: Charts,
     children: [
       {
+        path: '',
+        redirectTo: '/women',
+        pathMatch: 'full'
+      },{
         path: ':gender',
         children: [
           {path: '', component: ChartDetails},
@@ -16,10 +20,6 @@ export const routes: ModuleWithProviders = RouterModule.forRoot([
         ]
       }
     ]
-  },{
-    path: '',
-    redirectTo: '/charts',
-    pathMatch: 'full'
   },{
     path: '**',
     redirectTo: '',

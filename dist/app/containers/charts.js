@@ -22,11 +22,16 @@ var Charts = (function () {
         this.chartsService.getCharts()
             .subscribe(function (resp) { return _this.charts = resp; });
     };
+    Charts.prototype.getRouterLink = function (chart) {
+        var a = "./" + chart.name.toLowerCase();
+        console.log(a);
+        return a;
+    };
     return Charts;
 }());
 Charts = __decorate([
     core_1.Component({
-        template: "\n    \n    <div class=\"nav-title\">Select your category</div>\n\n    <nav class=\"nav\">\n      <ul>\n        <li\n          *ngFor=\"let chart of charts\"\n        >\n          <a\n            [routerLink]=\"['/charts', chart.name.toLowerCase()]\"\n            routerLinkActive=\"active\"\n          >\n            {{ chart.name }}\n          </a>\n        </li>\n        \n      </ul>\n    </nav>\n    \n    <router-outlet></router-outlet>\n\n\n  "
+        template: "\n    \n    <div class=\"nav-title\">Select your category</div>\n\n    <nav class=\"nav\">\n      <ul>\n        <li\n          *ngFor=\"let chart of charts\"\n        >\n          <a\n            [routerLink]=\"['/' + chart.name.toLowerCase()]\"\n            routerLinkActive=\"active\"\n          >\n            {{ chart.name }}\n          </a>\n        </li>\n        \n      </ul>\n    </nav>\n    \n    <router-outlet></router-outlet>\n\n\n  "
     }),
     __metadata("design:paramtypes", [router_1.Router,
         index_1.ChartsService])

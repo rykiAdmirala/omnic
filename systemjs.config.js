@@ -30,6 +30,6 @@
         defaultExtension: 'js'
       }
     },
-    baseURL: '/omnic/'
+    baseURL: '/'
   });
 })(this);

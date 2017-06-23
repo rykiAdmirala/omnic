@@ -14,7 +14,7 @@ import { ChartsService } from '../services/index';
           *ngFor="let chart of charts"
         >
           <a
-            [routerLink]="['/charts', chart.name.toLowerCase()]"
+            [routerLink]="['/' + chart.name.toLowerCase()]"
             routerLinkActive="active"
           >
             {{ chart.name }}
@@ -45,7 +45,11 @@ export class Charts implements OnInit {
 
   }
 
-  
+  getRouterLink(chart) {
+    let a = `./${chart.name.toLowerCase()}`;
+    console.log(a);
+    return a;
+  }
 
 
 }
