@@ -14,7 +14,7 @@ var index_1 = require("./index");
 var ChartsService = (function () {
     function ChartsService(api) {
         this.api = api;
-        this.url = '/omnic/assets/data.json';
+        this.url = '/assets/data.json';
         this.chartsPath = 'charts';
     }
     ChartsService.prototype.getCharts = function () {

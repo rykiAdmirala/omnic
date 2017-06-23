@@ -52,7 +52,7 @@ var ChartAddEdit = (function () {
         }
     };
     ChartAddEdit.prototype.navigateToParent = function () {
-        this.router.navigate(['/omnic/' + this.genderName]);
+        this.router.navigate(['/' + this.genderName]);
     };
     ChartAddEdit.prototype.trackByIndex = function (index, value) {
         return index;

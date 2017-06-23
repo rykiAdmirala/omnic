@@ -95,7 +95,7 @@ export class ChartAddEdit implements OnInit {
   }
 
   navigateToParent() {
-    this.router.navigate(['/' + this.genderName]);
+    this.router.navigate(['/omnic/' + this.genderName]);
   }
 
   trackByIndex(index, value) {
